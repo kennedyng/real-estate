@@ -1,17 +1,34 @@
-import "./App.css";
+import React from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import RootLayout from "./layouts/Root";
+import HomePage from "./pages/Home";
+import FilterPage from "./pages/Filter";
+import DetailOfferPage from "./pages/DetailOffer";
 
-function App() {
-  return (
-    <>
-      <h1>Hello</h1>
-      <h2>Hello</h2>
-      <h3>Hello</h3>
-      <h4>Hello</h4>
-      <h5>Hello</h5>
-      <h6>Hello</h6>
-      <p>Hello</p>
-    </>
-  );
-}
+const router = createBrowserRouter([
+  {
+    element: <RootLayout />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+
+      {
+        path: "/filter",
+        element: <FilterPage />,
+      },
+
+      {
+        path: "/details/:productId",
+        element: <DetailOfferPage />,
+      },
+    ],
+  },
+]);
+
+const App: React.FC = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;
