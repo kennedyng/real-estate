@@ -1,21 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
+import { navLinks } from "../constants";
+import { logo } from "../assets";
 
 const Nav: React.FC = () => {
   return (
-    <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/filter">Filter Page</Link>
-        </li>
-        <li>
-          <Link to="/details/1">Product Details</Link>
-        </li>
+    <nav className="flex flex-row py-8  items-center justify-between text-base px-4 md:px-8 lg:px-[100px] xl:[160px]">
+      <Link to="/">
+        <img
+          src={logo}
+          alt="logo"
+          className="cursor-pointer w-[64.84px] h-[40px] "
+        />
+      </Link>
+      <ul className="ml-20  flex-row gap-6 flex-1 hidden lg:flex ">
+        {navLinks.map(({ id, label, link }) => (
+          <li
+            key={id}
+            className="cursor-pointer text-paleBlue hover:text-hover"
+          >
+            <Link to={link}>{label}</Link>
+          </li>
+        ))}
       </ul>
-    </div>
+
+      <Button styles="px-4 py-3 hidden lg:block ">Contact Us</Button>
+
+      <Link to="/">
+        <img
+          src={logo}
+          alt="logo"
+          className="cursor-pointer w-[64.84px] h-[40px] lg:hidden "
+        />
+      </Link>
+    </nav>
   );
 };
 

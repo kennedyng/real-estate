@@ -7,8 +7,8 @@ const Root: React.FC = () => {
   return (
     <>
       <Nav />
-      <Outlet />
 
+      <Outlet />
       <Footer />
     </>
   );
