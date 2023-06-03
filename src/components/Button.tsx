@@ -5,7 +5,9 @@ interface Props {
 }
 const Button: React.FC<Props> = ({ children, styles }) => {
   return (
-    <button className={`bg-blue rounded-[4px] text-white font-bold ${styles}`}>
+    <button
+      className={` rounded-[4px] hover:bg-hover text-white font-bold ${styles}`}
+    >
       {children}
     </button>
   );

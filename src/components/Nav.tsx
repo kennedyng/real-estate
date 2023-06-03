@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import { navLinks } from "../constants";
 import { logo } from "../assets";
+import { section } from "../styles";
 
 const Nav: React.FC = () => {
   return (
-    <nav className="flex flex-row py-8  items-center justify-between text-base px-4 md:px-8 lg:px-[100px] xl:[160px]">
+    <nav
+      className={`flex flex-row py-8  items-center justify-between text-base ${section.paddingX}`}
+    >
       <Link to="/">
         <img
           src={logo}

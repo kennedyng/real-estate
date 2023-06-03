@@ -1,7 +1,6 @@
 import React from "react";
-import Nav from "../components/Nav";
 import { Outlet } from "react-router-dom";
-import Footer from "../components/Footer";
+import { Footer, Nav } from "../components";
 
 const Root: React.FC = () => {
   return (
