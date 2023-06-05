@@ -1,6 +1,7 @@
 import React from "react";
 import { section } from "../styles";
 import { dotsbg, hero } from "../assets";
+import { Button } from ".";
 
 const Hero: React.FC = () => {
   return (
@@ -17,6 +18,20 @@ const Hero: React.FC = () => {
             <br className="hidden lg:block" /> in Madrid and Barcelona more than
             15 years.
           </p>
+
+          <div className="flex-row gap-4 p-6 z-20 bg-lightBlue rounded-[4px] w-7/12 absolute hidden md:flex">
+            <select className="w-2/4 p-4 rounded-[4px] ">
+              <option>dddd</option>
+              <option>dddd</option>
+              <option>dddd</option>
+            </select>
+            <input
+              className="w-3/4 p-4 rounded-[4px] "
+              placeholder="Search of location"
+            />
+
+            <Button styles="bg-blue w-1/4 p-4 rounded-[4px] ">Search</Button>
+          </div>
         </div>
         <div className="relative h-[100%] w-full">
           <img src={dotsbg} className="  h-[100%] w-[90%] absolute right-0  " />
