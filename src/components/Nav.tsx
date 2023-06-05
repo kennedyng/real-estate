@@ -34,7 +34,7 @@ const Nav: React.FC = () => {
       </ul>
 
       <div
-        className={` fixed top-0 right-0 bg-lightBlue h-screen ${
+        className={` fixed z-20 top-0 right-0 bg-lightBlue h-screen ${
           open ? "w-full md:w-2/4" : "w-0"
         } duration-200 lg:hidden`}
       >
