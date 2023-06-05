@@ -3,4 +3,5 @@ import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
 import Button from "./Button";
 import Nav from "./Nav";
-export { Hero, NewsLetter, Footer, Button, Nav };
+import TopOffers from "./TopOffers";
+export { Hero, NewsLetter, Footer, Button, Nav, TopOffers };

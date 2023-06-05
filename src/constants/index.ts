@@ -8,12 +8,12 @@ export const navLinks: NavLinkType[] = [
   {
     id: "nav-link-1",
     label: "Top offers",
-    link: "#",
+    link: "/#top-offers",
   },
   {
     id: "nav-link-2",
     label: "Search in offers",
-    link: "#",
+    link: "/filter",
   },
   {
     id: "nav-link-3",

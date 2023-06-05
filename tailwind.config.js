@@ -17,6 +17,7 @@ export default {
       hover: "#6E8AE9",
       white: "#DDDDDD",
       paleBlue: "#141B2D",
+      faint: "#DADAEE",
     },
     fontFamily: {
       serifs: ["Merriweather", "serif"],

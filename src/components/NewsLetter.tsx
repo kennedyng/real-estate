@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from ".";
 import { section } from "../styles";
 
-const NewsLetter = () => {
+const NewsLetter: React.FC = () => {
   return (
     <div
       className={` ${section.paddingX} flex flex-col bg-lightBlue items-center justify-center w-full h-[398px]`}
