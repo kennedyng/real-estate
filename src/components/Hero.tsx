@@ -5,16 +5,16 @@ import { dotsbg, hero } from "../assets";
 const Hero: React.FC = () => {
   return (
     <section className={`${section.paddingLeft}  pr-4 md:pr-[50px] `}>
-      <div className="flex flex-col md:flex-row gap-2 items-center h-[544px]">
+      <div className="flex flex-col md:flex-row gap-2 items-center h-[450px]  lg:h-[544px]">
         <div className="w-full text-center md:text-start ">
-          <h1 className="text-4xl font-serifs  text-darkBlue font-bold  md:text-6xl lg:leading-[86.35px] ">
+          <h1 className="text-4xl font-serifs  text-darkBlue font-bold  md:text-5xl lg:leading-[86.35px] lg:text-6xl">
             Modern living <br className="hidden md:block" /> for everyone
           </h1>
           <p className="text-darkBlue  lg:leading-[32.2px]">
             We provide a complete service for the sale, purchase{" "}
-            <br className="hidden md:block" />
+            <br className="hidden lg:block" />
             or rental of real estate. We have been operating{" "}
-            <br className="hidden md:block" /> in Madrid and Barcelona more than
+            <br className="hidden lg:block" /> in Madrid and Barcelona more than
             15 years.
           </p>
         </div>
