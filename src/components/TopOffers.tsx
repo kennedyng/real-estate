@@ -6,7 +6,7 @@ const TopOffers: React.FC = () => {
   return (
     <section
       id="top-offers"
-      className={`${section.paddingX}flex flex-col bg-lightBlue py-40`}
+      className={`${section.paddingX} ${section.paddingY} flex flex-col bg-lightBlue `}
     >
       <h1 className="font-serif font-bold text-[51px] text-darkBlue">
         Top Offers
@@ -21,9 +21,10 @@ const TopOffers: React.FC = () => {
         <Button styles="border-2 px-2">Show all offers</Button>
       </div>
 
-      <div className="flex flex-row items-center gap-4">
-        <hr className="w-full" />
-        <div>button klk lkl lk ls</div>
+      <div className="flex flex-row items-center justify-center gap-4 my-10">
+        <hr className="flex-1 border-2 hidden md:block" />
+        <div className="bg-darkBlue text-white p-2 rounded-full">next</div>
+        <div className="bg-darkBlue text-white p-2 rounded-full">next</div>
       </div>
     </section>
   );

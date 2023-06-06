@@ -1,5 +1,6 @@
 import React from "react";
-import { Hero, NewsLetter, TopOffers } from "../components";
+import { AboutUs, Hero, NewsLetter, TopOffers } from "../components";
+import OurTeam from "../components/OurTeam";
 
 const Home: React.FC = () => {
   return (
@@ -7,6 +8,8 @@ const Home: React.FC = () => {
       <Hero />
 
       <TopOffers />
+      <AboutUs />
+
       <NewsLetter />
     </>
   );

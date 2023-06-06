@@ -10,20 +10,22 @@ export default {
         "2xl": "6rem",
       },
     },
-    colors: {
-      darkBlue: "#091638",
-      blue: "#1C3988",
-      lightBlue: "#F3F3FA",
-      hover: "#6E8AE9",
-      white: "#DDDDDD",
-      paleBlue: "#141B2D",
-      faint: "#DADAEE",
-    },
+
     fontFamily: {
       serifs: ["Merriweather", "serif"],
       sans: ["Nato Sans", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        darkBlue: "#091638",
+        blue: "#1C3988",
+        lightBlue: "#F3F3FA",
+        hover: "#6E8AE9",
+        white: "#DDDDDD",
+        paleBlue: "#141B2D",
+        faint: "#DADAEE",
+      },
+    },
   },
   plugins: [],
 };
