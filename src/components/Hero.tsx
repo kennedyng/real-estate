@@ -34,8 +34,14 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="relative h-[100%] w-full">
-          <img src={dotsbg} className="  h-[100%] w-[90%] absolute right-0  " />
-          <img src={hero} className=" h-[100%] w-[90%] z-10 absolute top-3" />
+          <img
+            src={dotsbg}
+            className="  h-[100%] w-[90%] absolute right-0  bg-cover bg-no-repeat"
+          />
+          <img
+            src={hero}
+            className=" h-[100%] w-[90%] z-10 absolute top-3 bg-cover bg-no-repeat"
+          />
         </div>
       </div>
     </section>
