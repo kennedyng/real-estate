@@ -8,7 +8,7 @@ interface CardProps {
   imgUrl?: string;
 }
 const Card: React.FC<CardProps> = ({ imgUrl, title, description }) => (
-  <div className="flex flex-col items-center rounded-[4px] border-[1px]  shadow-xl p-12 flex-1  text-darkBlue cursor-pointer">
+  <div className="flex flex-col items-center rounded-[4px] border-[1px]  shadow-xl p-12 min-w-[220px] flex-1  text-darkBlue cursor-pointer">
     <img
       className="bg-black rounded-full w-[200px] h-[200px] bg-cover bg-no-repeat"
       alt={title}
@@ -35,7 +35,9 @@ const OurTeam: React.FC = () => {
       ))}
 
       <div className="flex flex-col text-darkBlue items-center justify-center order-first lg:order-1">
-        <h1 className="font-serifs font-bold text-6xl text-center">Our Team</h1>
+        <h1 className="font-serifs font-bold text-3xl text-center lg:text-3xl">
+          Our Team
+        </h1>
         <p className="text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus rutrum
           donec ultricies cras id ac.

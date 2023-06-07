@@ -5,7 +5,7 @@ const Card: React.FC = () => {
   return (
     <div className="flex flex-col flex-1 bg-lightBlue py-12  px-6 rounded-[4px] gap-6">
       <div className="flex flex-row gap-2">
-        <span>Icon</span>
+        <h1 className="font-bold text-6xl font-serifs opacity-[50%]">"</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in
           pellentesque ultrices et massa neque, convallis lorem. Erat proin in
@@ -25,10 +25,11 @@ const Card: React.FC = () => {
 const References: React.FC = () => {
   return (
     <section
+      id="references"
       className={`${section.paddingX} ${section.paddingY} text-darkBlue`}
     >
-      <h1 className="text-6xl">References</h1>
-      <p>
+      <h1 className="text-3xl font-bold lg:text-6xl">References</h1>
+      <p className="mb-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus
         rutrum donec ultricies cras id ac.
       </p>

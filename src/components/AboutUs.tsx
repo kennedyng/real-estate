@@ -5,7 +5,7 @@ import OurTeam from "./OurTeam";
 
 const AboutUs: React.FC = () => {
   return (
-    <div className={`${section.paddingX} ${section.paddingY}  `}>
+    <div className={`${section.paddingX} ${section.paddingY} `}>
       <div className="flex flex-col items-center  gap-24  md:flex-row">
         <div className="relative flex-1  h-[100%]">
           <img src={dots} className="top-0 h-[100%] w-[100%] left-0  " />

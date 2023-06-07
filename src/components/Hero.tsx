@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
     <section className={`${section.paddingLeft}  pr-4 md:pr-[50px] `}>
       <div className="flex flex-col md:flex-row gap-2 items-center h-[450px]  lg:h-[544px]">
         <div className="w-full text-center md:text-start ">
-          <h1 className="text-4xl font-serifs  text-darkBlue font-bold  md:text-5xl lg:leading-[86.35px] lg:text-6xl">
+          <h1 className="text-4xl font-serifs  text-darkBlue font-bold   lg:leading-[86.35px] lg:text-6xl">
             Modern living <br className="hidden md:block" /> for everyone
           </h1>
           <p className="text-darkBlue  lg:leading-[32.2px]">

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { navLinks } from "../constants";
-import { logo } from "../assets";
+
 import { section } from "../styles";
+import { logo } from "../assets/icons";
 
 const Nav: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
