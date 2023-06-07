@@ -1,6 +1,5 @@
 import React from "react";
-import { ClimbingBoxLoader, HashLoader } from "react-spinners";
-import { logo } from "../assets/icons";
+import { HashLoader } from "react-spinners";
 
 const Loading: React.FC = () => {
   return (

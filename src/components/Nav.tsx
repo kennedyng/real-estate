@@ -35,22 +35,22 @@ const Nav: React.FC = () => {
       </ul>
 
       <div
-        className={` fixed z-20 top-0 right-0 bg-lightBlue h-screen ${
+        className={` fixed z-40 top-0 right-0 bg-lightBlue h-screen ${
           open ? "w-full md:w-2/4" : "w-0"
         } duration-200 lg:hidden`}
       >
         <button
-          className="p-2 text-white relative top-0 right-0 bg-darkBlue"
+          className=" h-[40px] w-[40px] text-white relative top-2 left-2 rounded-full bg-darkBlue"
           onClick={handleToggleMenu}
         >
-          close
+          <i className="fi fi-br-cross text-xs text-[#fff]"></i>
         </button>
         <div className="h-screen py-10 ">
           <ul className=" text-center flex flex-col gap-2">
             {navLinks.map(({ id, label, link }) => (
               <li
                 key={id}
-                className="cursor-pointer text-paleBlue text-lg font-bold hover:underline duration-200"
+                className="cursor-pointer text-paleBlue text-lg font-bold hover:underline duration-500"
               >
                 <Link to={link} onClick={handleToggleMenu}>
                   {label}
@@ -63,12 +63,10 @@ const Nav: React.FC = () => {
 
       <Button styles="px-4 py-3 hidden lg:block bg-blue">Contact Us</Button>
 
-      <img
+      <i
         onClick={handleToggleMenu}
-        src={logo}
-        alt="logo"
-        className="cursor-pointer w-[64.84px] h-[40px] lg:hidden "
-      />
+        className="fi fi-br-menu-burger lg:hidden text-3xl text-darkBlue"
+      ></i>
     </nav>
   );
 };

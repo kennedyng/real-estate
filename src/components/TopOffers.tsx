@@ -1,29 +1,9 @@
 import React, { useRef } from "react";
 import { Button } from ".";
 import { section } from "../styles";
-import { hero } from "../assets";
-import { topOffers } from "../constants";
 
-interface CardProps {
-  id: string;
-  title: string;
-  price: string;
-  city: string;
-  img: string;
-}
-const Card: React.FC<CardProps> = ({ title, price, city, id, img }) => {
-  return (
-    <div
-      id={id}
-      className="shadow-lg rounded-[4px]  bg-[#fff] min-w-[320px] max-w-[320px] text-darkBlue "
-    >
-      <img src={img} className="bg-cover h-[250px] w-[100%]" alt="" />
-      <h5 className=" px-4 mt-6 mb-5 font-serifs font-bold text-xl">{title}</h5>
-      <div className="px-4   font-bold text-blue "> {price}</div>
-      <div className="px-4  pb-4">{city}</div>
-    </div>
-  );
-};
+import { topOffers } from "../constants";
+import Card from "./Card";
 
 const TopOffers: React.FC = () => {
   const listEndRef = useRef<HTMLDivElement>(null);
@@ -55,12 +35,14 @@ const TopOffers: React.FC = () => {
 
       <div className="flex flex-row items-center justify-center gap-4 my-10">
         <hr className="flex-1 border-2 hidden md:block" />
-        <div className="bg-darkBlue text-white p-2 rounded-full">next</div>
+        <div className="bg-darkBlue text-white p-2 rounded-full">
+          <i className="fi fi-rr-angle-left"></i>
+        </div>
         <button
           className="bg-darkBlue text-white p-2 rounded-full"
           onClick={handleNext}
         >
-          next
+          <i className="fi fi-rr-angle-small-left bg-red-600"></i>
         </button>
       </div>
 

@@ -35,7 +35,11 @@ const Hero: React.FC = () => {
               placeholder="Search of location"
             />
 
-            <Button styles="bg-blue w-1/4 p-4 rounded-[4px] ">Search</Button>
+            <Button styles="bg-blue w-1/4 p-4 rounded-[4px] ">
+              <i className="fi fi-rr-search"></i>
+              <i className="fi fi-br-menu-burger "></i>
+              Search
+            </Button>
           </div>
         </div>
         <div className="relative h-[100%] w-full">
