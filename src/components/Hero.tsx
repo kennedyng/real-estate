@@ -2,6 +2,7 @@ import React from "react";
 import { section } from "../styles";
 import { dotsbg, hero } from "../assets";
 import { Button } from ".";
+import { logo } from "../assets/icons";
 
 const Hero: React.FC = () => {
   return (
@@ -19,12 +20,16 @@ const Hero: React.FC = () => {
             15 years.
           </p>
 
-          <div className="flex-row gap-4 p-6 z-20 bg-lightBlue rounded-[4px] w-7/12 absolute hidden md:flex">
-            <select className="w-2/4 p-4 bg-faint border-paleBlue rounded-[4px] ">
-              <option>Property</option>
-              <option>dddd</option>
-              <option>dddd</option>
-            </select>
+          <div className="mt-2 flex-row gap-4 p-6 z-20 bg-lightBlue rounded-[4px] w-7/12 absolute hidden md:flex">
+            <div className="relative flex flex-row w-2/4">
+              <select className="flex-1 p-4 bg-[#fff] border-paleBlue rounded-[4px] appearance-none ">
+                <option>Property</option>
+                <option>dddd</option>
+                <option>dddd</option>
+              </select>
+
+              <img src={logo} className="absolute right-2 h-[25px] top-4" />
+            </div>
             <input
               className="w-3/4 p-4 rounded-[4px] "
               placeholder="Search of location"
