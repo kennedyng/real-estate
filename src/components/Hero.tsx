@@ -3,6 +3,7 @@ import { section } from "../styles";
 import { dotsbg, hero } from "../assets";
 import { Button } from ".";
 import { logo } from "../assets/icons";
+import { BsSearch } from "react-icons/bs";
 
 const Hero: React.FC = () => {
   return (
@@ -24,8 +25,8 @@ const Hero: React.FC = () => {
             <div className="relative flex flex-row w-2/4">
               <select className="flex-1 p-4 bg-[#fff] border-paleBlue rounded-[4px] appearance-none ">
                 <option>Property</option>
-                <option>dddd</option>
-                <option>dddd</option>
+                <option>House</option>
+                <option>Boarding House</option>
               </select>
 
               <img src={logo} className="absolute right-2 h-[25px] top-4" />
@@ -35,9 +36,8 @@ const Hero: React.FC = () => {
               placeholder="Search of location"
             />
 
-            <Button styles="bg-blue w-1/4 p-4 rounded-[4px] ">
-              <i className="fi fi-rr-search"></i>
-              <i className="fi fi-br-menu-burger "></i>
+            <Button styles="bg-blue flex flex-row items-center gap-2 w-1/4 p-4 rounded-[4px] ">
+              <BsSearch />
               Search
             </Button>
           </div>

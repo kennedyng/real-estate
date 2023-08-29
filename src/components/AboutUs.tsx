@@ -20,18 +20,13 @@ const AboutUs: React.FC = () => {
           </h1>
 
           <p className="text-darkBlue text-base md:text-lg">
-            We are a company that connects the world of real estate and finance.
-            We provide a complete service for the sale, purchase or rental of
-            real estate. Our advantage is more than 15 years of experience and
-            soil in attractive locations in Slovakia with branches in Bratislava
-            and Košice.
-          </p>
-
-          <p className="text-darkBlue text-base md:text-lg">
-            We have a connection to all banks on the Slovak market, so we can
-            solve everything under one roof. By constantly innovating our
-            business activities, we move forward and we are able to offer truly
-            above-standard services that set us apart from the competition.
+            We are a dedicated team of real estate experts with a passion for
+            helping you find your ideal property. With years of experience in
+            the industry, we understand that buying or selling a home is a
+            significant milestone in your life. That's why we're committed to
+            providing top-notch service and expert guidance every step of the
+            way. Whether you're a first-time buyer, an investor, or looking to
+            sell your property, we've got you covered.
           </p>
         </div>
       </div>

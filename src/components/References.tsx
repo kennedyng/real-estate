@@ -1,22 +1,23 @@
 import React from "react";
 import { section } from "../styles";
+import { reference } from "../utils/constants";
 
-const Card: React.FC = () => {
+interface CardProps {
+  quote: string;
+  author: string;
+  description: string;
+}
+const Card: React.FC<CardProps> = ({ quote, author, description }) => {
   return (
     <div className="flex flex-col flex-1 bg-lightBlue py-12  px-6 rounded-[4px] gap-6">
       <div className="flex flex-row gap-2">
         <h1 className="font-bold text-6xl font-serifs opacity-[50%]">"</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in
-          pellentesque ultrices et massa neque, convallis lorem. Erat proin in
-          posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum
-          scelerisque mi ac nisi. Dictumst nunc placerat ultricies pretium.
-        </p>
+        <p>{quote}</p>
       </div>
 
       <div className="flex flex-col">
-        <h1 className="font-serifs font-bold">Emerson Aminoff</h1>
-        <p>3 bedroom apartmentt in Madrid </p>
+        <h1 className="font-serifs font-bold">{author}</h1>
+        <p>{description} </p>
       </div>
     </div>
   );
@@ -30,13 +31,21 @@ const References: React.FC = () => {
     >
       <h1 className="text-3xl font-bold lg:text-6xl">References</h1>
       <p className="mb-10">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus
-        rutrum donec ultricies cras id ac.
+        our success is best measured by the satisfaction and success of our
+        valued clients. We take great pride in the relationships we've built and
+        the results we've achieved. Here's what some of our clients have to say
+        about their experiences working with us
       </p>
 
       <div className="flex flex-col md:flex-row gap-12">
-        <Card />
-        <Card />
+        {reference.map(({ id, quote, author, description }) => (
+          <Card
+            key={id}
+            quote={quote}
+            author={author}
+            description={description}
+          />
+        ))}
       </div>
     </section>
   );

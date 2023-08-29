@@ -8,9 +8,9 @@ interface CardProps {
   imgUrl?: string;
 }
 const Card: React.FC<CardProps> = ({ imgUrl, title, description }) => (
-  <div className="flex flex-col items-center rounded-[4px] border-[1px]  shadow-xl p-12 min-w-[220px] flex-1  text-darkBlue cursor-pointer">
+  <div className="flex flex-col items-center rounded-[4px] border-[1px] h-full  shadow-xl p-12 min-w-[220px] flex-1  text-darkBlue cursor-pointer">
     <img
-      className="bg-black rounded-full w-[200px] h-[200px] bg-cover bg-no-repeat"
+      className="bg-black rounded-full w-[100%] h-[100%] bg-cover bg-no-repeat md:w-[200px] "
       alt={title}
       src={imgUrl}
     />
@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ imgUrl, title, description }) => (
 const OurTeam: React.FC = () => {
   return (
     <section
-      className={`pt-10 ${section.paddingX} grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:pt-[120px]`}
+      className={`pt-10 ${section.paddingX} grid grid-cols-1 gap-8 md:grid-cols-2 items-stretch lg:grid-cols-3 lg:pt-[120px]`}
     >
       {staff.map((memberInfo, index) => (
         <div key={memberInfo.id} className={`order-${index + 1}`}>
@@ -39,8 +39,12 @@ const OurTeam: React.FC = () => {
           Our Team
         </h1>
         <p className="text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus rutrum
-          donec ultricies cras id ac.
+          dedicated and experienced real estate professionals is here to serve
+          as your trusted partners in the exciting journey of buying or selling
+          a property. With a combined wealth of knowledge, a commitment to
+          excellence, and a passion for helping clients achieve their real
+          estate goals, we are proud to introduce you to our remarkable team of
+          agents.
         </p>
       </div>
     </section>

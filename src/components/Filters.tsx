@@ -4,8 +4,10 @@ const Filters: React.FC = () => {
   return (
     <div className="flex flex-col gap-8 justify-center items-center">
       <div className="flex flex-row gap-4 ">
-        <input placeholder="Enter Keyword" className="px-4 py-5 border-2" />
-        <button>Search</button>
+        <input
+          placeholder="Enter Keyword"
+          className="px-4 py-5 border-2 w-full"
+        />
       </div>
 
       <div className="flex flex-row  w-full items-center gap-1">
@@ -15,23 +17,6 @@ const Filters: React.FC = () => {
         </p>
         <hr className="w-full" />
       </div>
-
-      <div className="grid grid-cols-1 w-full gap-10 md:grid-cols-2 lg:grid-cols-4">
-        <select className="flex-1">
-          <option>Sale</option>
-        </select>
-        <select className="flex-1">
-          <option>Sale</option>
-        </select>
-        <select className="flex-1">
-          <option>Sale</option>
-        </select>
-        <select className="flex-1">
-          <option>Sale</option>
-        </select>
-      </div>
-
-      <input type="range" />
     </div>
   );
 };

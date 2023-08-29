@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Button } from ".";
 import { section } from "../styles";
 
@@ -6,15 +6,6 @@ import { topOffers } from "../constants";
 import Card from "./Card";
 
 const TopOffers: React.FC = () => {
-  const listEndRef = useRef<HTMLDivElement>(null);
-
-  const handleNext = () => {
-    listEndRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "nearest",
-    });
-  };
   return (
     <section
       id="top-offers"
@@ -38,10 +29,7 @@ const TopOffers: React.FC = () => {
         <div className="bg-darkBlue text-white p-2 rounded-full">
           <i className="fi fi-rr-angle-left"></i>
         </div>
-        <button
-          className="bg-darkBlue text-white p-2 rounded-full"
-          onClick={handleNext}
-        >
+        <button className="bg-darkBlue text-white p-2 rounded-full">
           <i className="fi fi-rr-angle-small-left bg-red-600"></i>
         </button>
       </div>
@@ -50,8 +38,6 @@ const TopOffers: React.FC = () => {
         {topOffers.map((offer) => (
           <Card key={offer.id} {...offer} />
         ))}
-
-        <div ref={listEndRef} />
       </div>
     </section>
   );

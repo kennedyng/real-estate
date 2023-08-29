@@ -52,32 +52,32 @@ interface StaffType {
 export const staff: StaffType[] = [
   {
     id: "staff-1",
-    name: "Davis Carder",
-    desc: "Super duper postion",
+    name: "Marry Carder",
+    desc: "Marry has over 10 years of experience in the real estate industry. His extensive knowledge of the local market and negotiation skills make him a valuable asset to our clients.",
     img: member1,
   },
   {
     id: "staff-2",
-    name: "Davis Carder",
-    desc: "Super duper postion",
+    name: "Emily Davis",
+    desc: "Emily specializes in luxury properties and understands the discerning tastes of high-end buyers. Her commitment to excellence ensures a seamless experience.",
     img: member2,
   },
   {
     id: "staff-3",
-    name: "Davis Carder",
-    desc: "Super duper postion",
+    name: "Dais Johnson",
+    desc: "Johnson specializes in real estate investments. He's helped numerous clients build wealth through strategic property investments.",
     img: member3,
   },
   {
     id: "staff-4",
-    name: "Davis Carder",
-    desc: "Super duper postion",
+    name: "Sarah Smith",
+    desc: "Sarah is passionate about helping first-time homebuyers find their dream homes. Her dedication and attention to detail ensure a smooth buying process.",
     img: member4,
   },
   {
     id: "staff-5",
-    name: "Davis Carder",
-    desc: "Super duper postion",
+    name: "Michael Brown",
+    desc: "Michael excels in commercial real estate transactions, helping businesses find the perfect space for their operations. His market knowledge is unmatch",
     img: member5,
   },
 ];
